@@ -122,9 +122,10 @@ class _HomePageState extends State<HomePage> {
                 itemCount: NameList.length,
                 itemBuilder: (context, index) {
                   return ListTile(
-                    onTap: () {
+                    onLongPress: (){
                       showDeleteDialog(index);
                     },
+
                     leading: Icon(Icons.person,),
                     trailing: Icon(Icons.phone, color: Colors.lightBlueAccent,),
                     title: Text(
